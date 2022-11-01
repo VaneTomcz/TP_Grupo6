@@ -1,0 +1,195 @@
+* { box-sizing: border-box; }
+
+html{scroll-behavior: smooth;}
+header {   
+  position: sticky;   
+  top: 0; 
+}
+
+body {
+    margin: 0%;
+    font-family: 'Cinzel', serif ;
+    background-color:rgb(241, 236, 227);
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h3{font-size: 1em;}
+p{font-size: 2em;}
+ul{list-style: none}
+li{font-size: 1.25em;}
+
+header{
+  background-color: rgb(241, 236,227);
+  width:100%;
+  z-index: 70;
+  margin: auto;
+  padding: 15px 15px;
+}
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+button{
+  font-family: 'Cinzel', serif ;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(221, 176, 122) ;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: black;
+  background-color: rgb(221, 176, 122);
+}
+
+button:hover{
+  background-color: antiquewhite;
+}
+
+#navbar ul li {
+  display: inline-block;
+  line-height: 49px;
+  color: black
+
+}
+
+
+header .logo{
+margin: 0;
+padding: 15px 15px;
+font-weight: bold;
+color: rgb(213, 138, 45);
+font-size: 2.5em;
+text-align: center;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/** aqui esta la animación **/ 
+
+header p{
+  padding: 5px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: medium;
+
+  animation-name: mianimacion;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+
+  0%{color:black}
+  25%{color: orangered}
+  50%{color:orange}
+  75% {color: orangered}
+  100% {color:black}
+
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: small;
+}
+
+header a:hover{
+  color: rgb(213, 138, 45);
+}
+
+#ppal .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  font-size: xx-large;
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+  ),url("img/choi.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size:100%;
+  background-position: center ;
+  
+  
+}
+
+
+#ppal h3{
+  font-family: 'Cormorant', serif;
+  font-size: 25px;
+}
+
+#ppal p{
+  font-family: 'Cormorant', serif;
+  font-size: 25px;
+}
+
+#Instructor p{
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+}
+
+#Instructor .container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 12px;
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),url("img/fede.png");
+  color: white;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 30%;
+  background-position: right center;
+  
+}
+
+
+#clases .container {
+  padding: 50px 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#clases h3 {
+  color: rgb(221, 176, 122) ;
+}
+#clases p {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+}
+
+
+#contacto .container{
+text-align: center;
+padding: 70px 12px;
+}
+
+#contacto li{
+  margin: 12px 0px;
+ }
+
+footer p{
+  font-size: 15px;
+}
