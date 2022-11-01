@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="static/">
+    <link rel="stylesheet" href="js/script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b2ad02b9c.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+        <!-- <div class="modal_wrap">
+        <div class="mensaje_modal">
+          <h4>Errores encontrados</h4>
+          <p>Nombre Obligatorio</p>
+          <p>Correo electronico Obligatorio</p>
+          <p>Escriba un mensaje</p>
+          <span id="btnclose">Cerrar </span>
+        </div>
+      </div> -->
+
+    <header>
+        <nav id="navbar">
+            <img src="img/logo2.png" align=left width="120px" border=0>
+            <img src="img/ITF.png" align=right width="120px" border=0>
+            <h1 class="logo"> TAEKWON-DO INTEGRAL MOK-JEOK</h1>
+            <p align=center> Escuela de TAEKWON-DO</p>
+            
+              <hr>
+            <div class="container">
+              <ul>
+                <li><a href="#Instructor">Instructor</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="descargas.html">Descargas</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    <section class="form_wrap" id="contacto">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>FORMULARIO<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> +54 9 11 XXXXXXX</p>
+            </section>
+        </section>
+
+        <form action="https://formspree.io/f/mqkjyngd"  method="post" class="form_contact">
+            <h3>Envia un mensaje</h3>
+            <br>
+            <div class="user_info">
+
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" placeholder="Ingrese su nombre" required>
+
+                <label for="phone">Teléfono / Celular</label>
+                <input type="text" id="phone" placeholder="Ingrese su Teléfono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" placeholder="Ingrese su correo electronico" required>
+
+        <label >Elija Clase 
+            <select name="" id="">
+                <option value="Adultos">Adultos</option>
+                <option value="Infantiles">Infantiles</option>
+            </select>       
+         </label>
+                    <br>
+                    <br>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" required></textarea>
+
+                <input type="button" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+      </section>
+    </body>
+</html>
